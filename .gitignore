@@ -1,0 +1,44 @@
+# Byte-compiled / optimized / DLL files  
+*.py[cod]  
+*.pyd  
+*.pyo  
+*.pytb  
+
+# Virtual environment directory  
+venv/  
+.env/  
+
+# Logs  
+*.log  
+*.tmp  
+
+# Database files  
+*.db  
+
+# IDE and editor files  
+.vscode/  
+.idea/  
+*.iml  
+
+# Operating system files  
+.DS_Store  
+Thumbs.db  
+
+# Documentation files  
+docs/_build/  
+
+# Tests and coverage files  
+tests/__pycache__/  
+.coverage  
+.tox/  
+
+# Package files  
+*.egg-info  
+dist/  
+build/  
+
+# Build files  
+__pycache__/  
+
+# Note: If you have a file named ".gitignore" in your project,  
+# you may want to exclude it from the gitignore file itself.
