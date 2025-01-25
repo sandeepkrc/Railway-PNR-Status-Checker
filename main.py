@@ -88,7 +88,6 @@ class PNRStatusChecker:
             page.locator("#CaptchaImgID").screenshot(path="captcha.png")
 
             captcha_result = self.image_processor.extract_text_from_image("captcha.png")
-            print("===  result  ===",captcha_result)
             page.fill("#inputCaptcha", str(captcha_result))
             page.locator("#submitPnrNo").click()
 
@@ -163,11 +162,6 @@ def generate_html_report(data):
 
 if __name__ == "__main__":  
     pnr = input("Enter PNR: ")
-
-
-
-
-
     checker = PNRStatusChecker("/opt/homebrew/bin/tesseract")  # Update path as per your OS  
     details = checker.fetch_pnr_status(pnr)  
     generate_html_report(details)
